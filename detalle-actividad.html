@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StudyFlow · Calendario</title>
+<title>StudyFlow · Detalle de actividad</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -59,6 +59,7 @@
         </nav>
       </div>
     </header>
+
     <!-- INICIO footer (pie de la barra lateral) -->
     <div id="footer">
       <footer>
@@ -87,82 +88,48 @@
     <main>
 
       <div class="barra-superior">
-        <div></div>
+        <p class="ruta-navegacion"><a href="calendario.html">‹ Calendario</a> / <strong>Detalle de actividad</strong></p>
         <div class="usuario-actual">
           <div class="datos-usuario">
-            <strong class="nombre-usuario">Valentina Rueda</strong>
+            <strong class="nombre-usuario"></strong>
             <span class="rol-usuario">Estudiante</span>
           </div>
-          <div class="avatar">VR</div>
+          <div class="avatar"></div>
         </div>
       </div>
 
-      <section id="seccionCalendario">
-        <div class="encabezado-seccion">
-          <h1>Calendario</h1>
-          <div class="selector-mes">
-            <span id="mesActual">Septiembre 2026</span>
-            <div class="controles-mes">
-              <button type="button" id="mesAnterior" aria-label="Mes anterior">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-              </button>
-              <button type="button" id="mesSiguiente" aria-label="Mes siguiente">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-              </button>
-            </div>
+      <section id="seccionDetalle" class="contenedor-detalle">
+        <a href="calendario.html" class="enlace-volver">‹ Volver a calendario</a>
+        <h1 class="titulo-detalle" id="detalleTitulo"></h1>
+
+        <div class="tarjeta-formulario">
+          <div class="grupo-campo">
+            <p class="titulo-grupo">Materia</p>
+            <p class="valor-detalle" id="detalleMateria"></p>
+          </div>
+          <div class="grupo-campo">
+            <p class="titulo-grupo">Nombre de la tarea</p>
+            <p class="valor-detalle" id="detalleNombre"></p>
+          </div>
+          <div class="grupo-campo">
+            <p class="titulo-grupo">Fecha límite</p>
+            <p class="valor-detalle" id="detalleFecha"></p>
+          </div>
+          <div class="grupo-campo">
+            <p class="titulo-grupo">Pomodoros estimados</p>
+            <p class="valor-detalle" id="detallePomodoros"></p>
+          </div>
+
+          <div class="acciones-detalle">
+            <a href="nueva-entrega.html" class="boton-secundario" id="botonEditarActividad">Editar</a>
+            <button type="button" class="boton-oscuro" id="botonEliminarActividad">Eliminar actividad</button>
           </div>
         </div>
-
-        <div class="pestanas" id="pestanasCalendario">
-          <button type="button" class="pestanaCalendario activa" data-vista="semana">Semana</button>
-          <button type="button" class="pestanaCalendario" data-vista="mes">Mes</button>
-        </div>
-
-        <!-- ===================== VISTA SEMANA ===================== -->
-        <article id="vistaSemana">
-          <div class="tarjeta-calendario">
-            <div class="vista-semana" id="gridSemana">
-              <div class="celda-encabezado">HORA</div>
-              <div class="celda-encabezado">LUN</div>
-              <div class="celda-encabezado">MAR</div>
-              <div class="celda-encabezado">MIÉ</div>
-              <div class="celda-encabezado">JUE</div>
-              <div class="celda-encabezado">VIE</div>
-              <div class="celda-encabezado">SÁB</div>
-              <div class="celda-encabezado">DOM</div>
-
-            </div>
-          </div>
-        </article>
-
-        <!-- ===================== VISTA MES ===================== -->
-        <article id="vistaMes" class="ocultar">
-          <div class="leyenda-materias" id="leyendaMaterias"></div>
-
-          <div class="tarjeta-calendario">
-            <div class="vista-mes" id="gridMes">
-              <div class="celda-encabezado">LUN</div>
-              <div class="celda-encabezado">MAR</div>
-              <div class="celda-encabezado">MIÉ</div>
-              <div class="celda-encabezado">JUE</div>
-              <div class="celda-encabezado">VIE</div>
-              <div class="celda-encabezado">SÁB</div>
-              <div class="celda-encabezado">DOM</div>
-
-            </div>
-          </div>
-        </article>
-
       </section>
 
     </main>
   </div>
   <!-- FIN contenidos -->
-
-  <a href="nueva-entrega.html" class="boton-flotante" id="botonCrearActividad">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-    Crear Actividad
-  </a>
 
 </div>
 <!-- FIN wrapper -->
