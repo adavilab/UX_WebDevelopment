@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyFlow · Crear materia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- INICIO wrapper -->
+<div id="wrapper" class="con-sidebar">
+
+  <!-- INICIO header (barra lateral) -->
+  <div id="header">
+    <header>
+      <div id="identidad">
+        <h1>
+          <a href="calendario.html">
+            <span class="logo-marca" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </span>
+            <strong>StudyFlow</strong>
+          </a>
+        </h1>
+      </div>
+
+      <div id="menu">
+        <nav>
+          <ul>
+            <li>
+              <a href="calendario.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Calendario</span>
+              </a>
+            </li>
+            <li>
+              <a href="materias.html" class="activo con-borde">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                <span>Materias</span>
+              </a>
+            </li>
+            <li>
+              <a href="sugerencias.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg>
+                <span>Sugerencias</span>
+              </a>
+            </li>
+            <li>
+              <a href="perfil.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Perfil</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- INICIO footer (pie de la barra lateral) -->
+    <div id="footer">
+      <footer>
+        <ul>
+          <li>
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <span>Ayuda y Soporte</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              <span>Cerrar sesión</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- FIN footer (pie de la barra lateral) -->
+  </div>
+  <!-- FIN header (barra lateral) -->
+
+  <!-- INICIO contenidos -->
+  <div id="contenidos">
+    <main>
+
+      <div class="barra-superior">
+        <p class="ruta-navegacion">‹ Materias / <strong>Crear materia</strong></p>
+        <div class="usuario-actual">
+          <div class="datos-usuario">
+            <strong class="nombre-usuario">Valentina Rueda</strong>
+            <span class="rol-usuario">Estudiante</span>
+          </div>
+          <div class="avatar">VR</div>
+        </div>
+      </div>
+
+      <a href="materias.html" class="enlace-volver">‹ Volver a Materias</a>
+
+      <div class="encabezado-formulario">
+        <h1>Crear materia</h1>
+        <p class="subtitulo">Registra los datos de cursado y organiza tu horario semanal de estudio</p>
+      </div>
+
+      <form id="formCrearMateria" novalidate>
+        <div class="tarjeta-formulario">
+
+          <div class="grupo-campo">
+            <label for="nombreMateria">Nombre de la materia *</label>
+            <input type="text" id="nombreMateria" name="nombreMateria" placeholder="Ej. Álgebra Lineal, Biología Molecular...">
+          </div>
+
+          <div class="grupo-campo">
+            <label for="codigoMateria">Código de materia *</label>
+            <input type="text" id="codigoMateria" name="codigoMateria" placeholder="EJ. MATE-201, ISIS-102">
+          </div>
+
+          <div class="grupo-campo">
+            <label for="profesorMateria">Profesor (opcional) <span class="nota-campo">Docente titular</span></label>
+            <input type="text" id="profesorMateria" name="profesorMateria" placeholder="Ej. Sandra Rueda">
+          </div>
+
+          <hr class="divisor">
+
+          <div class="grupo-campo">
+            <p class="titulo-grupo">Color identificador de materia</p>
+            <div class="cuadricula-colores" id="cuadriculaColores">
+
+              <label class="opcion-color seleccionado">
+                <input type="radio" name="colorMateria" value="lila" checked>
+                <span class="nombre-color">Lila</span>
+                <span class="muestra-color muestra-lila"></span>
+              </label>
+
+              <label class="opcion-color">
+                <input type="radio" name="colorMateria" value="coral">
+                <span class="nombre-color">Coral suave</span>
+                <span class="muestra-color muestra-coral"></span>
+              </label>
+
+              <label class="opcion-color">
+                <input type="radio" name="colorMateria" value="gris">
+                <span class="nombre-color">Gris perla</span>
+                <span class="muestra-color muestra-gris"></span>
+              </label>
+
+              <label class="opcion-color">
+                <input type="radio" name="colorMateria" value="aqua">
+                <span class="nombre-color">Aqua suave</span>
+                <span class="muestra-color muestra-aqua"></span>
+              </label>
+
+              <label class="opcion-color">
+                <input type="radio" name="colorMateria" value="salvia">
+                <span class="nombre-color">Verde salvia</span>
+                <span class="muestra-color muestra-salvia"></span>
+              </label>
+
+              <label class="opcion-color">
+                <input type="radio" name="colorMateria" value="azul">
+                <span class="nombre-color">Azul grisáceo</span>
+                <span class="muestra-color muestra-azul"></span>
+              </label>
+
+              <label class="opcion-color">
+                <input type="radio" name="colorMateria" value="rosa">
+                <span class="nombre-color">Rosa polvo</span>
+                <span class="muestra-color muestra-rosa"></span>
+              </label>
+
+              <label class="opcion-color">
+                <input type="radio" name="colorMateria" value="mostaza">
+                <span class="nombre-color">Mostaza suave</span>
+                <span class="muestra-color muestra-mostaza"></span>
+              </label>
+
+            </div>
+          </div>
+
+          <hr class="divisor">
+
+          <div class="grupo-campo">
+            <p class="titulo-grupo">Días de clase semanal</p>
+            <div class="grupo-dias" id="grupoDias">
+              <label class="chip-dia marcado">
+                <span class="caja-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <input type="checkbox" name="dias" value="lunes" checked>
+                Lunes
+              </label>
+              <label class="chip-dia">
+                <span class="caja-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <input type="checkbox" name="dias" value="martes">
+                Martes
+              </label>
+              <label class="chip-dia marcado">
+                <span class="caja-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <input type="checkbox" name="dias" value="miercoles" checked>
+                Miércoles
+              </label>
+              <label class="chip-dia">
+                <span class="caja-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <input type="checkbox" name="dias" value="jueves">
+                Jueves
+              </label>
+              <label class="chip-dia">
+                <span class="caja-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <input type="checkbox" name="dias" value="viernes">
+                Viernes
+              </label>
+              <label class="chip-dia">
+                <span class="caja-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <input type="checkbox" name="dias" value="sabado">
+                Sábado
+              </label>
+            </div>
+            <p class="error-campo">Selecciona al menos un día de clase.</p>
+          </div>
+
+          <hr class="divisor">
+
+          <div class="grupo-campo">
+            <p class="titulo-grupo">Horario de clase</p>
+            <div class="fila-horario">
+              <div class="campo-select">
+                <select id="horaInicio" name="horaInicio">
+                  <option value="06:00">06:00 AM</option>
+                  <option value="07:00">07:00 AM</option>
+                  <option value="08:00" selected>08:00 AM</option>
+                  <option value="09:00">09:00 AM</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:00">01:00 PM</option>
+                  <option value="14:00">02:00 PM</option>
+                  <option value="15:00">03:00 PM</option>
+                  <option value="16:00">04:00 PM</option>
+                </select>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+              <span class="separador-horario">a</span>
+              <div class="campo-select">
+                <select id="horaFin" name="horaFin">
+                  <option value="08:00">08:00 AM</option>
+                  <option value="09:00">09:00 AM</option>
+                  <option value="10:00" selected>10:00 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:00">01:00 PM</option>
+                  <option value="14:00">02:00 PM</option>
+                  <option value="15:00">03:00 PM</option>
+                  <option value="16:00">04:00 PM</option>
+                  <option value="17:00">05:00 PM</option>
+                  <option value="18:00">06:00 PM</option>
+                </select>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </div>
+            <p class="error-campo">La hora de fin debe ser posterior a la de inicio.</p>
+          </div>
+
+          <hr class="divisor">
+
+          <div class="acciones-formulario">
+            <button type="submit" class="boton-primario" id="botonGuardarMateria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Guardar materia
+            </button>
+            <a href="materias.html" class="boton-secundario">Cancelar</a>
+          </div>
+
+        </div>
+      </form>
+
+      <div class="nota-formulario">
+        <p class="nota-info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          Las materias registradas se sincronizan automáticamente con las métricas del dashboard principal y las sesiones de estudio.
+        </p>
+        <p>Campos obligatorios (*)</p>
+      </div>
+
+    </main>
+  </div>
+  <!-- FIN contenidos -->
+
+</div>
+<!-- FIN wrapper -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/datos.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
