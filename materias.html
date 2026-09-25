@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyFlow · Materias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- INICIO wrapper -->
+<div id="wrapper" class="con-sidebar">
+
+  <!-- INICIO header (barra lateral) -->
+  <div id="header">
+    <header>
+      <div id="identidad">
+        <h1>
+          <a href="calendario.html">
+            <span class="logo-marca" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </span>
+            <strong>StudyFlow</strong>
+          </a>
+        </h1>
+      </div>
+
+      <div id="menu">
+        <nav>
+          <ul>
+            <li>
+              <a href="calendario.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Calendario</span>
+              </a>
+            </li>
+            <li>
+              <a href="materias.html" class="activo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
+                <span>Materias</span>
+              </a>
+            </li>
+            <li>
+              <a href="sugerencias.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg>
+                <span>Sugerencias</span>
+              </a>
+            </li>
+            <li>
+              <a href="perfil.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Perfil</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- INICIO footer (pie de la barra lateral) -->
+    <div id="footer">
+      <footer>
+        <ul>
+          <li>
+            <a href="#">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 2-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <span>Ayuda y Soporte</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html" id="cerrarSesionMaterias">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              <span>Cerrar sesión</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- FIN footer (pie de la barra lateral) -->
+  </div>
+  <!-- FIN header (barra lateral) -->
+
+  <!-- INICIO contenidos -->
+  <div id="contenidos">
+    <main>
+
+      <div class="barra-superior">
+        <p class="ruta-navegacion">Materias / <strong>Panel principal</strong></p>
+        <div class="usuario-actual">
+          <div class="datos-usuario">
+            <strong class="nombre-usuario">Valentina Rueda</strong>
+            <span class="rol-usuario">Estudiante</span>
+          </div>
+          <div class="avatar">VR</div>
+        </div>
+      </div>
+
+      <section id="seccionMaterias">
+
+        <p class="etiqueta-superior"><span class="punto"></span>Días de cursado / Panel general</p>
+
+        <div class="encabezado-materias">
+          <h1>Materias</h1>
+          <a href="crear-materia.html" class="boton-crear">+ Crear materia</a>
+        </div>
+
+        <div class="tarjetas-resumen">
+
+          <article class="tarjeta-resumen">
+            <div class="cuerpo-resumen">
+              <div class="encabezado-resumen">
+                <span class="titulo-resumen">Total materias</span>
+                <span class="icono-resumen icono-gris" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </span>
+              </div>
+              <p class="cifra-resumen" id="resumenTotalMaterias"></p>
+              <p class="detalle-resumen" id="resumenSemestre"></p>
+            </div>
+            <div class="pie-resumen">
+              <span id="resumenHoras"></span>
+            </div>
+          </article>
+
+          <article class="tarjeta-resumen">
+            <div class="cuerpo-resumen">
+              <div class="encabezado-resumen">
+                <span class="titulo-resumen">Progreso semanal</span>
+                <span class="icono-resumen icono-durazno" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" y1="2" x2="14" y2="2"/><line x1="12" y1="14" x2="15" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+                </span>
+              </div>
+              <p class="cifra-resumen" id="resumenPomodoros"></p>
+              <div class="barra-progreso"><div class="relleno" id="resumenBarra"></div></div>
+            </div>
+            <div class="pie-resumen">
+              <span id="resumenPorcentaje"></span>
+              <span class="destacado" id="resumenRestantes"></span>
+            </div>
+          </article>
+
+          <article class="tarjeta-resumen">
+            <div class="cuerpo-resumen">
+              <div class="encabezado-resumen">
+                <span class="titulo-resumen">Calendario académico</span>
+                <span class="icono-resumen icono-lila" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/><path d="M9 10l2 2 4-4"/></svg>
+                </span>
+              </div>
+              <p class="estado-sync"><span class="punto"></span>Sincronizado</p>
+              <p class="detalle-resumen">Semana activa: Lun - Vie</p>
+            </div>
+            <div class="pie-resumen">
+              <span>Última revisión: Hoy, 11:20 AM</span>
+              <a href="#" class="enlace-recargar" id="recargarCalendarioAcademico">Recargar</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="encabezado-lista">
+          <p class="titulo-lista">Lista de materias <span class="chip-contador" id="contadorMaterias"></span></p>
+          <div class="acciones-lista">
+            <button type="button" aria-label="Ordenar materias">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3v18M17 3l4 4M17 3l-4 4"/><path d="M7 21V3M7 21l4-4M7 21l-4-4"/></svg>
+            </button>
+            <button type="button" aria-label="Ver como cuadrícula">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="lista-materias" id="listaMaterias"></div>
+
+        <section class="seccion-entregas">
+          <p class="titulo-entregas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><polyline points="14 2 14 8 20 8"/><path d="M17 22v-6l3 3m-6 0l3-3"/></svg>
+            Próximas Entregas
+          </p>
+
+          <div class="tarjetas-entregas" id="listaEntregas"></div>
+        </section>
+
+      </section>
+
+    </main>
+  </div>
+  <!-- FIN contenidos -->
+
+</div>
+<!-- FIN wrapper -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/datos.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
